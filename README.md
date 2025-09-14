@@ -2,7 +2,7 @@
 
 Sebuah aplikasi web sederhana yang dibangun dengan **Python** dan **Flask** untuk mengunduh video publik dari Facebook. Aplikasi ini menyediakan antarmuka web modern dan responsif, serta sebuah **API JSON** untuk integrasi lebih lanjut.
 
-![Screenshot Aplikasi](https://ik.imagekit.io/bly37h3bc/nyan_1750939759628_fEqys_WUn.jpg)
+![Screenshot Aplikasi]([https://ik.imagekit.io/bly37h3bc/nyan_1750939759628_fEqys_WUn.jpg](https://github.com/AdnNyx/universal-vid-down/blob/main/Image/Example.png))
 
 ---
 
