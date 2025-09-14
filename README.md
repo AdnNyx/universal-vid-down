@@ -148,7 +148,3 @@ You are free to use it for personal, educational, or extended development purpos
 ## 🙋 Contributors
 
 * **Developer**: [@vollereich](https://www.instagram.com/vollereich/)
-
-
-Mau saya tambahkan **badge GitHub** (misalnya untuk Python version, Flask, License) biar README-nya lebih keren dan informatif?
-```
