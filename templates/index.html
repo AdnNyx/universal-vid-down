@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- background animation -->
+     <div class="background-animation"></div>
+    <!-- content -->
+    <main class="container">
+        <header>
+            <h1>Video Downloader</h1>
+            <p>Paste the video URL below to get the download link.</p>
+        </header>
+        <form id="url-form">
+            <input type="url" id="fb-url" placeholder="Enter Video URL" required>
+            <button type="submit" id="submit-btn">Search</button>
+        </form>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="result" class="result-card" style="display: none;"></div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>&copy;Vollerei Ch. All right reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

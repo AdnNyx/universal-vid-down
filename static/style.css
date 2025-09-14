@@ -1,7 +1,7 @@
 :root {
     --bg-color: #0f0c29;
-    --primary-color: #302b63;
-    --secondary-color: #24243e;
+    --primary-color: #363266;
+    --secondary-color: #282841;
     --accent-color: #537895;
     --text-color: #ffffff;
     --fb-blue: #1877f2;
@@ -113,7 +113,7 @@ header p {
 .loader {
     width: 50px;
     height: 50px;
-    border: 5px solid rgba(255, 255, 255, 0.2);
+    border: 5px solid rgba(255, 255, 255, 0.);
     border-top: 5px solid var(--text-color);
     border-radius: 50%;
     animation: spin 1s linear infinite;
