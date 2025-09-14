@@ -142,4 +142,4 @@ Proyek ini dirilis di bawah lisensi MIT. Bebas digunakan untuk proyek pribadi, e
 
 ## 🙋 Kontributor
 
-- **Developer**: [@Ogya (NyanDrive)](https://nyanhosting.id)
+- **Developer**: []()
