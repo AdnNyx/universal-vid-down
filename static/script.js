@@ -67,9 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const resultHTML = `
             <img src="${thumbnail_url}" alt="Video Thumbnail">
             <div class="info">
-                <h3>${title || 'Judul Tidak Tersedia'}</h3>
-                <p>Oleh: ${uploader || 'Uploader Tidak Diketahui'}</p>
-                <a href="${download_url}" class="download-btn" download>Unduh Video (.${extension || 'mp4'})</a>
+                <h3>${title || 'Title not available'}</h3>
+                <p>Oleh: ${uploader || 'Unknown Uploader'}</p>
+                <a href="${download_url}" class="download-btn" download>Download Video (.${extension || 'mp4'})</a>
             </div>
         `;
 
