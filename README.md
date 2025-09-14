@@ -3,7 +3,7 @@
 A simple web application built with **Python** and **Flask** to download public videos from the web.  
 It provides a modern, responsive web interface and a **JSON API** for further integration.
 
-![App Screenshot](https://github.com/AdnNyx/universal-vid-down/blob/main/Image/Example.png?raw=true)
+![App Screenshot](https://github.com/AdnNyx/universal-vid-down/blob/main/Image/example.png?raw=true)
 
 ---
 
