@@ -1,4 +1,4 @@
-# 📥 Facebook Video Downloader (Pengunduh Video Facebook)
+# 📥 Downloader Video
 
 Sebuah aplikasi web sederhana yang dibangun dengan **Python** dan **Flask** untuk mengunduh video publik dari Facebook. Aplikasi ini menyediakan antarmuka web modern dan responsif, serta sebuah **API JSON** untuk integrasi lebih lanjut.
 
