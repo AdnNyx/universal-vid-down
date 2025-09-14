@@ -1,77 +1,80 @@
-# 📥 Downloader Video
+# 📥 Video Downloader
 
-Sebuah aplikasi web sederhana yang dibangun dengan **Python** dan **Flask** untuk mengunduh video publik dari Facebook. Aplikasi ini menyediakan antarmuka web modern dan responsif, serta sebuah **API JSON** untuk integrasi lebih lanjut.
+A simple web application built with **Python** and **Flask** to download public videos from the web.  
+It provides a modern, responsive web interface and a **JSON API** for further integration.
 
-![Screenshot App](https://github.com/AdnNyx/universal-vid-down/blob/main/Image/Example.png?raw=true)
-
----
-
-## 🚀 Fitur
-
-- 🎨 **Antarmuka Web Modern**  
-  Tampilan bersih dan responsif dengan animasi latar belakang.
-
-- 🔌 **API JSON Fleksibel**  
-  Endpoint `/download` yang mengembalikan informasi video dalam format JSON.
-
-- 🧠 **Pengambilan Data Otomatis**  
-  Mendapatkan judul, nama uploader, dan gambar thumbnail dari video.
-
-- 🔧 **Backend Andal**  
-  Menggunakan pustaka `yt-dlp` yang selalu diperbarui untuk mendukung perubahan dari Facebook.
-
-- ⚡ **Ringan dan Mudah Dijalankan**  
-  Dibangun dengan Flask, sebuah micro-framework Python.
+![App Screenshot](https://github.com/AdnNyx/universal-vid-down/blob/main/Image/Example.png?raw=true)
 
 ---
 
-## 🗂️ Struktur Proyek
+## 🚀 Features
+
+- 🎨 **Modern Web Interface**  
+  Clean, responsive design with animated backgrounds.
+
+- 🔌 **Flexible JSON API**  
+  `/download` endpoint that returns video information in JSON format.
+
+- 🧠 **Automatic Data Retrieval**  
+  Fetches video title, uploader name, and thumbnail image.
+
+- 🔧 **Reliable Backend**  
+  Powered by `yt-dlp`, frequently updated to support changes on video platforms.
+
+- ⚡ **Lightweight & Easy to Run**  
+  Built with Flask, a Python micro-framework.
+
+---
+
+## 🗂️ Project Structure
 
 ```
-proyek-downloader/
-├── app.py              # Backend Flask (API & Web Server)
-├── requirements.txt    # Daftar pustaka Python
+
+video-downloader/
+├── app.py              # Flask backend (API & Web server)
+├── requirements.txt    # Python dependencies
 ├── templates/
-│   └── index.html      # Halaman antarmuka
+│   └── index.html      # Web interface
 └── static/
-    ├── style.css       # Styling tampilan
-    └── script.js       # Logika frontend
-```
+├── style.css       # Frontend styling
+└── script.js       # Frontend logic
+
+````
 
 ---
 
-## ⚙️ Instalasi
+## ⚙️ Installation
 
-### 1. Clone Proyek
+### 1. Clone the Repository
 
 ```bash
-git clone https://url-repositori-anda.git
-cd nama-direktori-proyek
-```
+git clone https://your-repository-url.git
+cd your-project-directory
+````
 
-### 2. Buat `requirements.txt`
+### 2. Create `requirements.txt`
 
-Isi dengan:
+Add the following:
 
 ```
 Flask
 yt-dlp
 ```
 
-### 3. Buat dan Aktifkan Virtual Environment
+### 3. Create and Activate Virtual Environment
 
 ```bash
-# Buat virtual environment
+# Create virtual environment
 python3 -m venv venv
 
-# Aktifkan (Linux/macOS)
+# Activate (Linux/macOS)
 source venv/bin/activate
 
-# Aktifkan (Windows)
+# Activate (Windows)
 venv\Scripts\activate
 ```
 
-### 4. Install Dependensi
+### 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -79,67 +82,73 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Cara Penggunaan
+## ▶️ Usage
 
-### 1. Jalankan Server
+### 1. Run the Server
 
 ```bash
 python app.py
 ```
 
-Akses melalui: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+Access at: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-### 2. Gunakan Antarmuka Web
+### 2. Use the Web Interface
 
-- Masukkan URL video Facebook ke kolom input.
-- Klik tombol **"Dapatkan Video"**.
-- Informasi dan tautan unduh akan muncul jika berhasil.
+* Enter the video URL in the input field.
+* Click **"Get Video"**.
+* If successful, video information and download links will appear.
 
-### 3. Gunakan API Secara Langsung (Opsional)
+### 3. Use the API Directly (Optional)
 
 Endpoint:
+
 ```
-GET /download?url=https://www.facebook.com/watch?v=...
+GET /download?url=https://example.com/video/...
 ```
 
-Contoh Respons Sukses:
+✅ Example Success Response:
 
 ```json
 {
   "success": true,
-  "title": "Judul Video Keren",
-  "uploader": "Nama Halaman Facebook",
-  "thumbnail_url": "https://url.ke/thumbnail.jpg",
-  "download_url": "https://url.video/unduhan.mp4",
+  "title": "Awesome Video Title",
+  "uploader": "Uploader Name",
+  "thumbnail_url": "https://url.to/thumbnail.jpg",
+  "download_url": "https://url.to/video.mp4",
   "extension": "mp4"
 }
 ```
 
-Contoh Respons Gagal:
+❌ Example Error Response:
 
 ```json
 {
   "success": false,
-  "error": "Gagal memproses video. Pastikan URL valid dan video bersifat publik."
+  "error": "Failed to process video. Please ensure the URL is valid and the video is public."
 }
 ```
 
 ---
 
-## 🧰 Teknologi yang Digunakan
+## 🧰 Technologies Used
 
-- **Backend**: Python, Flask  
-- **Video Processing**: yt-dlp  
-- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
-
----
-
-## 📄 Lisensi
-
-Proyek ini dirilis di bawah lisensi MIT. Bebas digunakan untuk proyek pribadi, edukasi, atau pengembangan lebih lanjut.
+* **Backend**: Python, Flask
+* **Video Processing**: yt-dlp
+* **Frontend**: HTML5, CSS3, Vanilla JavaScript
 
 ---
 
-## 🙋 Kontributor
+## 📄 License
 
-- **Developer**: []()
+This project is released under the MIT License.
+You are free to use it for personal, educational, or extended development purposes.
+
+---
+
+## 🙋 Contributors
+
+* **Developer**: [@vollereich](https://www.instagram.com/vollereich/)
+
+
+Mau saya tambahkan **badge GitHub** (misalnya untuk Python version, Flask, License) biar README-nya lebih keren dan informatif?
+```
