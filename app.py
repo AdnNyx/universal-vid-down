@@ -13,13 +13,11 @@ def home():
 # Route untuk Sitemap (SEO)
 @app.route('/sitemap.xml')
 def sitemap():
-    # Mengambil file sitemap.xml dari folder 'static'
     return send_from_directory('static', 'sitemap.xml')
 
-# Route untuk Robots.txt (Opsional tapi sangat disarankan untuk SEO)
+# Route untuk Robots.txt (Opsional)
 @app.route('/robots.txt')
 def robots():
-    # Anda perlu membuat file robots.txt di folder static juga
     return send_from_directory('static', 'robots.txt')
     
 # Route API
@@ -69,6 +67,7 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
 
     app.run(host='0.0.0.0', port=port, debug=True)
+
 
 
 
