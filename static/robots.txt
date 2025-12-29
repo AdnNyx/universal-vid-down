@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://universal-vid-down.vercel.app/sitemap.xml
