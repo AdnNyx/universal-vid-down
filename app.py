@@ -9,6 +9,9 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('static', 'sitemap.xml')
 # Route API
 @app.route('/download', methods=['GET'])
 def get_video_info():
@@ -54,4 +57,5 @@ def get_video_info():
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
+
     app.run(host='0.0.0.0', port=port, debug=True)
